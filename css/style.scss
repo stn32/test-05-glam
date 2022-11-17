@@ -22,57 +22,78 @@ div {
 }
 
 body {
+    background: $color3;
+}
+
+section {
     max-width: 1200px;
     margin: auto;
-    background: #333;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 50px;
-    background: #eee;
-    padding: 0 2rem;
+    background: $color3;
     box-sizing: border-box;
-    .header__l {
-        @include center;
-        @media (max-width: 991px) {
-            display: none;
+    .header__nav {
+        padding: 0 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        box-sizing: border-box;
+        .header__l {
+            @include center;
+            @media (max-width: 991px) {
+                display: none;
+            }
+            li {
+                @include font-title;
+                margin-right: 1rem;
+                display: block;
+                list-style-type: none;
+                text-transform: uppercase;
+                color: $color1;
+            }
         }
-        li {
-            @include font-title;
-            margin-right: 1rem;
-            display: block;
-            list-style-type: none;
-            text-transform: uppercase;
+        .header__c {
+            span {
+                margin-right: 10px;
+                img {
+                    width: 25px;
+                    filter: invert(1);
+                }
+            }
         }
-    }
-    .header__c {
-        span {
-            margin-right: 10px;
-            img {
-                width: 25px;
+        .header__r {
+            li {
+                @include font-title;
+                list-style-type: none;
+                text-align: right;
+                color: $color1;
             }
         }
     }
-    .header__r {
-        li {
-            @include font-title;
-            list-style-type: none;
-            text-align: right;
-        }
-    }
+}
+.header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .homepage1 {
-    height: 600px;
+    height: 750px;
     background: url("../i/bg-main.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
-    padding: 0 5rem;
     div {
+        padding: 0 4rem;
         p {
             margin: 0;
             padding: 0;
@@ -292,6 +313,8 @@ header {
 footer {
     background: $color3;
     div {
+        max-width: 1200px;
+        margin: auto;
         padding: 2rem;
         li {
             @include font-txt;
