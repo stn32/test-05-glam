@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@400;700&display=swap");
+div {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #eee;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+header .header__l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  header .header__l {
+    display: none;
+  }
+}
+header .header__l li {
+  font-family: "Oranienbaum", sans-serif;
+  margin-right: 1rem;
+  display: block;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+header .header__c span {
+  margin-right: 10px;
+}
+header .header__c span img {
+  width: 25px;
+}
+header .header__r li {
+  font-family: "Oranienbaum", sans-serif;
+  list-style-type: none;
+  text-align: right;
+}
+
+.homepage1 {
+  height: 600px;
+  background: url("../i/bg-main.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+.homepage1 div p {
+  margin: 0;
+  padding: 0;
+  font-family: "Oranienbaum", sans-serif;
+  font-size: 1.2rem;
+}
+.homepage1 div p:first-of-type {
+  margin: 1rem 0 5px 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.homepage1 div p:last-of-type {
+  color: rgb(247, 212, 141);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.homepage2 {
+  background: #fff;
+  padding: 2rem 0 2rem 0;
+}
+.homepage2 h1 {
+  font-family: "Oranienbaum", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+.homepage2 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  padding: 0 2rem;
+}
+.homepage2 img {
+  width: 100%;
+}
+.homepage2 span {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 5px auto 0 auto;
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.homepage3 {
+  background: #fff;
+  padding: 2rem 0;
+}
+.homepage3 .homepage3__box {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.homepage3 .homepage3__box h2 {
+  font-family: "Oranienbaum", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.homepage3 .homepage3__box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.homepage3 .homepage3__box .tab1 {
+  margin: 2rem 0 0 0;
+  border: solid 1px #ccc;
+  border-bottom: none;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  font-family: "Oranienbaum", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.homepage3 .homepage3__box .tab2 {
+  margin: 0 0 2rem 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #888;
+  border-collapse: collapse;
+}
+@media (max-width: 991px) {
+  .homepage3 .homepage3__box .tab2 {
+    font-size: 0.8rem;
+  }
+}
+.homepage3 .homepage3__box .tab2 thead {
+  background: rgb(183, 248, 199);
+}
+.homepage3 .homepage3__box .tab2 thead tr td {
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+.homepage3 .homepage3__box .tab2 tbody tr:first-of-type td {
+  text-align: center;
+  color: #333;
+}
+.homepage3 .homepage3__box .tab2 tbody tr:last-of-type td {
+  padding: 1rem;
+  text-align: center;
+}
+.homepage3 .homepage3__box .tab2 tbody tr:last-of-type td span {
+  text-align: center;
+  color: #fff;
+  padding: 7px 15px;
+  background: rgb(255, 83, 83);
+}
+.homepage3 .homepage3__box .tab2 tr td {
+  padding: 1rem;
+  border: solid 1px #ccc;
+}
+.homepage3 img {
+  width: 100%;
+}
+
+.homepage4 {
+  background: #fff;
+  padding: 3rem 0 5rem 0;
+}
+.homepage4 h2 {
+  text-align: center;
+  font-family: "Oranienbaum", sans-serif;
+  margin: 2rem 0 4rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.homepage4 .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem;
+  transition: 400ms ease;
+}
+.homepage4 .cards .card {
+  font-family: "Roboto", sans-serif;
+  width: 31%;
+  border: solid 2px #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+  .homepage4 .cards .card {
+    width: 100%;
+  }
+}
+.homepage4 .cards .card b {
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+}
+.homepage4 .cards .card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.homepage4 .cards .card span {
+  color: #888;
+}
+.homepage4 .cards .card p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+.homepage4 .cards .card div {
+  text-align: center;
+}
+.homepage4 .cards .card div p:first-of-type {
+  position: relative;
+}
+.homepage4 .cards .card div p:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 20px;
+  background: url("../i/line.png") no-repeat center center/cover;
+}
+.homepage4 .cards .card button {
+  width: 100%;
+  padding: 0.7rem;
+  margin: auto;
+  background: rgb(240, 62, 62);
+  color: #fff;
+  border: none;
+}
+.homepage4 .cards .card:hover {
+  transition: 400ms ease;
+  box-shadow: 0px 5px 21px 2px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 0px 5px 21px 2px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 5px 21px 2px rgba(0, 0, 0, 0.49);
+}
+footer {
+  background: #000;
+}
+footer div {
+  padding: 2rem;
+}
+footer div li {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
