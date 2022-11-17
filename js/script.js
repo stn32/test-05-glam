@@ -7,10 +7,10 @@ function navBar() {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 600) {
             nav.classList.add('fixed');
-            body.style.padding = '50px';
+            body.style.paddingTop = '50px';
         } else {
             nav.classList.remove('fixed');
-            body.style.padding = '0';
+            body.style.paddingTop = '0';
         }
     });
 }
